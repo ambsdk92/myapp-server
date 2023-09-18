@@ -13,7 +13,7 @@ app.use((req, res, next) => {
 app.use("/users", userRouter);
 
 app.get("/about", (req, res) => {
-  res.send({ data: "this is response from server" });
+  res.send({ data: "this is about response" });
 });
 
 module.exports = app;
