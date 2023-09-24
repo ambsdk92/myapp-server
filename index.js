@@ -22,7 +22,7 @@ const app = express();
 
 app.all("/", (req, res) => {
   console.log("Just got a request!");
-  res.send("Yo boys singing song!");
+  res.send("installed express dotenv mongoose");
 });
 
 app.listen(PORT, () => {
