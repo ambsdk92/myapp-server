@@ -20,6 +20,10 @@ const connectDB = async () => {
 
 app.use("/api", server);
 
+app.get("/", (req, res) => {
+  res.sendFile(__dirname + "/public/index.html");
+});
+
 connectDB().then(() => {
   app.listen(PORT, () => {
     console.log("listening for requests");
