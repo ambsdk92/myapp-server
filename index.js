@@ -22,7 +22,7 @@ const connectDB = async () => {
 
 app.all("/", (req, res) => {
   console.log("Just got a request!");
-  res.send("changed port");
+  res.send("uncommented db conn");
 });
 
 connectDB().then(() => {
