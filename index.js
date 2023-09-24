@@ -5,9 +5,8 @@ const mongoose = require("mongoose");
 const server = require("./src/app");
 const PORT = process.env.PORT || 4000;
 
-app.use(cors());
-
 const app = express();
+app.use(cors());
 
 const connectDB = async () => {
   console.log("Establishing database connection...");
